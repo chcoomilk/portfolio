@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "PORT=3001 astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

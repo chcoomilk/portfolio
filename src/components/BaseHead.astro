@@ -36,6 +36,11 @@ const { title, description, image = "/social_img.png" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<script>
+	import { themeChange } from "theme-change";
+	themeChange();
+	// 👆 you could import the CDN directly instead of these two lines
+</script>
 <script is:inline>
 	// ☝️ This script prevent the FART effect.
 	if (localStorage.getItem("theme") === null) {
@@ -47,9 +52,4 @@ const { title, description, image = "/social_img.png" } = Astro.props;
 		);
 	// "theme" LocalStorage value is set by the package to remember user preference.
 	// The value is checked and applyed before rendering anything.
-</script>
-<script>
-	import { themeChange } from "theme-change";
-	themeChange();
-	// 👆 you could import the CDN directly instead of these two lines
 </script>
