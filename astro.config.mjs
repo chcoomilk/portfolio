@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-modern-personal-website.netlify.app',
+  site: 'https://porto.klaustinw.github.io',
   integrations: [mdx(), sitemap(), tailwind()],
   server: {
     port: +process.env.PORT || undefined,
