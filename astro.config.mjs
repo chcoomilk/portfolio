@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://chcoomilk.github.io',
   base: "/porto",
+  output: "server",
   integrations: [mdx(), sitemap(), tailwind()],
   server: {
     port: +process.env.PORT || undefined,
