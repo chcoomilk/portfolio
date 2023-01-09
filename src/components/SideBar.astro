@@ -22,9 +22,9 @@ import { LINKS } from "../config";
     </div>
     <ul>
       <!-- Sidebar content here -->
-      <li><a href="/porto/">Home</a></li>
-      <li><a href="/porto/projects">Projects</a></li>
-      <li><a href="/porto/cv">CV</a></li>
+      <li><a href={import.meta.env.BASE_URL}>Home</a></li>
+      <li><a href={import.meta.env.BASE_URL + "projects/1"}>Projects</a></li>
+      <li><a href={import.meta.env.BASE_URL + "cv"}>CV</a></li>
       <!-- <li>
         <a href="https://manuelernestog.github.io/paylink/" target="_blank"
           >Support my Work</a
