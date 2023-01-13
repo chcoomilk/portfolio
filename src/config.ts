@@ -1,7 +1,7 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Work Portofolio';
+export const SITE_TITLE = 'Klaustin';
 export const SITE_DESCRIPTION = 'A software engineer, developer, coder, programmer, or whatever else you may want to call it. You can find me on other platforms by going into my website here';
 export const LINKS = {
     github: "https://github.com/chcoomilk",
