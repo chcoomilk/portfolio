@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chcoomilk.github.io/porto/sitemap-index.xml
+Sitemap: https://chcoomilk.github.io/portfolio/sitemap-index.xml
