@@ -4,4 +4,7 @@ description: "himitsu is an open source pastebin service. Instead of a login sys
 pubDate: "2021-05-10T12:46:00Z"
 heroImage: "https://i.ibb.co/V27Ftg1/image.png"
 url: "https://himitsu-note.netlify.app"
+tags: [React TS, CryptoJS, JWT, TanStack Table, Rust, Actix]
+highlight: true
+preferred_position: 1
 ---

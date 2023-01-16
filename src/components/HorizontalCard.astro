@@ -1,11 +1,26 @@
 ---
-const { title, img, desc, url, badge, tags, target = '_blank' } = Astro.props;
+type Props = {
+  title: string;
+  img: string;
+  desc: string;
+  url: string;
+  badge?: string;
+  tags?: string[];
+  target?: string;
+};
+const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 ---
 
-<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<div
+  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+>
   <a href={url} target={target}>
     <div class="hero-content flex-col md:flex-row">
-      <img src={img} alt={title} class="max-w-full md:max-w-[13rem] rounded-lg" />
+      <img
+        src={img}
+        alt={title}
+        class="max-w-full md:max-w-[13rem] rounded-lg"
+      />
       <div class="grow w-full">
         <h1 class="text-xl font-bold">
           {title}
@@ -13,7 +28,10 @@ const { title, img, desc, url, badge, tags, target = '_blank' } = Astro.props;
         </h1>
         <p class="py-1 text-1xl">{desc}</p>
         <div class="card-actions justify-end">
-          {tags && tags.map((tag) => <div class="badge badge-outline">{tag}</div>)}
+          {
+            tags &&
+              tags.map((tag) => <div class="badge badge-outline mt-1 capitalize">{tag}</div>)
+          }
         </div>
       </div>
     </div>

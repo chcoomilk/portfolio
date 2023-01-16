@@ -4,9 +4,23 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 const posts = (await Astro.glob("./projects/*.{md,mdx}")).sort(
   (a, b) =>
+    // this will sort earliest
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
 );
+
+// const highlights = posts
+//   .filter((p) => p.frontmatter.highlight)
+//   .sort(
+//     // this will sort if preferred position exist, if both is the same position, use date
+//     // if preferred_position = 1 -> means it will show as the first item in list;
+//     // if preferred_position = 2 -> means it will show as the second item in list if there is first <CONTINUE>
+//     // otherwise, if there is no first, then second pos will be shown first because it's preferred,
+//     // and if none rest sorted by date by default; yes i overcomplicated this
+//     (a, b) =>
+//       a.frontmatter.preferred_position -
+//       (b.frontmatter.preferred_position || Number.POSITIVE_INFINITY)
+//   );
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -19,10 +33,9 @@ const last_posts = posts.slice(0, 3);
       <text class="text-lg">
         A <code>HACKTIV8</code> Grad from 2020. I develop full stack web applications
         preferably with TypeScript. I spent most of my time on my computer coding,
-        modding, gaming, and such. I admire the open source community and their
-        willingness to share their works and ideas away. I wish to do the same,
-        by hopefully helping other people with my projects that can be served as
-        examples.
+        modding, gaming, and such. I admire the open source community and their willingness
+        to share their works and ideas away. I wish to do the same, by hopefully
+        helping other people with my projects that can be served as examples.
       </text>
     </div>
     <div class="mt-8">
@@ -32,9 +45,9 @@ const last_posts = posts.slice(0, 3);
           tools and the templates that were given freely.
         </text>
       </div>
-      
+
       <div>
-        <a 
+        <a
           href="https://github.com/chcoomilk/portfolio"
           target="_blank"
           class="btn mr-5 mb-3"
@@ -57,16 +70,18 @@ const last_posts = posts.slice(0, 3);
   <div>
     <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
   </div>
-  
+
   {
     last_posts.map((post) => (
-      <HorizontalCard
-        title={post.frontmatter.title}
-        img={post.frontmatter.heroImage}
-        desc={post.frontmatter.description}
-        url={post.frontmatter.url}
-      />
-      <div class="divider my-0"></div>
+      <>
+        <HorizontalCard
+          title={post.frontmatter.title}
+          img={post.frontmatter.heroImage}
+          desc={post.frontmatter.description}
+          url={post.frontmatter.url}
+        />
+        <div class="divider my-0" />
+      </>
     ))
   }
 </BaseLayout>
