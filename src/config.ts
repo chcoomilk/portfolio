@@ -2,7 +2,7 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Klaustin';
-export const SITE_DESCRIPTION = 'A software engineer, developer, coder, programmer, or whatever else you may want to call it. You can find me on other platforms by going into my website here';
+export const SITE_DESCRIPTION = "Klaustin Wijaya's website portfolio, a software engineer from HACKTIV8. No this is not a template, I wrote this myself. Visit this website if you're interested and want to hire me.";
 export const LINKS = {
     github: "https://github.com/chcoomilk",
     instagram: "https://instagram.com/klaudtib",
