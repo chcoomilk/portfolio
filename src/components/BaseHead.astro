@@ -9,7 +9,11 @@ export interface Props {
 	image?: string;
 }
 
-const { title, description, image = "/social_img.png" } = Astro.props;
+const {
+	title,
+	description,
+	image = import.meta.env.BASE_URL + "social_img.png",
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
