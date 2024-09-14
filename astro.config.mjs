@@ -10,5 +10,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()],
   server: {
     port: +process.env.PORT || undefined,
-  }
+  },
+  outDir: 'public',
+  publicDir: 'static',
 });
