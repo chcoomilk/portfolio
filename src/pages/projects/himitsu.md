@@ -2,7 +2,7 @@
 title: "himitsu"
 description: "himitsu is an open source pastebin service. Instead of a login system, JWT secrets are provided so you still have power over your data without having to register/login."
 pubDate: "2021-05-10T12:46:00Z"
-heroImage: "https://i.ibb.co/V27Ftg1/image.png"
+heroImage: "https://private-user-images.githubusercontent.com/66551661/410776727-eb9d8636-b0d6-4446-b044-a9cb0196ae28.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg5MDc3MjEsIm5iZiI6MTczODkwNzQyMSwicGF0aCI6Ii82NjU1MTY2MS80MTA3NzY3MjctZWI5ZDg2MzYtYjBkNi00NDQ2LWIwNDQtYTljYjAxOTZhZTI4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjA3VDA1NTAyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgwYmNjZmZiOTEzZDIwMmE3OTYzNjI5MGUxMDliNmIyNDVkZWEwYmY3MDczODgzM2MxYTY3ZDg5Y2VkMGJmZmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XThZ4eipEOxpCgl1OSbDei75Kb6re4z_QGF3bCQAkCM"
 url: "https://himitsu-note.netlify.app"
 tags: [React TS, CryptoJS, JWT, TanStack Table, Rust, Actix]
 highlight: true

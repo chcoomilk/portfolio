@@ -4,10 +4,10 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_PREVIEW } from "../config";
 
 const {
-  image,
+  image = SITE_PREVIEW,
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
 } = Astro.props;
