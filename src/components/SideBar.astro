@@ -3,7 +3,7 @@ import { LINKS } from "../config";
 ---
 
 <div class="drawer-side bg-base-200">
-  <label for="my-drawer" class="drawer-overlay bg-base-200"></label>
+  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay bg-base-200"><span class="hidden">drawer</span></label>
   <div class="menu p-4 overflow-y-auto w-[19rem] bg-base-200 text-base-content">
     <div class="w-fit">
       <a href={import.meta.env.BASE_URL}>
@@ -14,22 +14,16 @@ import { LINKS } from "../config";
             <img
               class="mask mask-circle"
               src={`${import.meta.env.BASE_URL}/profile.jpg`}
-              alt="profile image"
+              alt="my profile"
             />
           </div>
         </div>
       </a>
     </div>
     <ul>
-      <!-- Sidebar content here -->
       <li><a href={import.meta.env.BASE_URL}>Home</a></li>
       <li><a href={import.meta.env.BASE_URL + "/projects/1"}>Projects</a></li>
       <li><a href={import.meta.env.BASE_URL + "/cv"}>CV</a></li>
-      <!-- <li>
-        <a href="https://manuelernestog.github.io/paylink/" target="_blank"
-          >Support my Work</a
-        >
-      </li> -->
       <li><a href="mailto:klaustin.wijaya@gmail.com">Contact</a></li>
     </ul>
     <div class="grow"></div>

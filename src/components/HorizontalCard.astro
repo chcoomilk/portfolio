@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 type Props = {
   title: string;
   img: string;
@@ -16,10 +18,13 @@ const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 >
   <a href={url} target={target}>
     <div class="hero-content flex-col md:flex-row">
-      <img
+      <Image
         src={img}
         alt={title}
         class="max-w-full md:max-w-[13rem] rounded-lg"
+        width="208"
+        height="109"
+        loading="eager"
       />
       <div class="grow w-full">
         <h1 class="text-xl font-bold">
