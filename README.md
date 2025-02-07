@@ -1,6 +1,6 @@
 # Astro Modern Personal Website
 
-![Astro Modern Personal Website](public/social_img.png)
+![portfolio](https://github.com/user-attachments/assets/5f244a3c-ce49-4812-881d-ebcdbca45b04)
 
 Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing for Astro framework.
 
