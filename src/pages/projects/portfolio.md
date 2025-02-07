@@ -2,7 +2,7 @@
 title: "My Astro Portfolio"
 description: "Astro Modern Personal Website Template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Design."
 pubDate: "2023-01-06T18:12:18Z"
-heroImage: https://private-user-images.githubusercontent.com/66551661/410777986-5f244a3c-ce49-4812-881d-ebcdbca45b04.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzg5MDc4ODYsIm5iZiI6MTczODkwNzU4NiwicGF0aCI6Ii82NjU1MTY2MS80MTA3Nzc5ODYtNWYyNDRhM2MtY2U0OS00ODEyLTg4MWQtZWJjZGJjYTQ1YjA0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjA3VDA1NTMwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBlMTFiMzdmNTM0ZmFjMWEzMWUwZWJkNzFiZGU0NGMzNGM2MjJlNzkxZWM3OGIzY2NjZjE3ZmFmMjQwZTc4MmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.1eTvB6bwXHs7WP0zhUXE346rLOTME6sqoZdsvWxcSnE
+heroImage: "/portfolio/projects/portfolio.png"
 url: "https://github.com/chcoomilk/portfolio"
 tags: [Astro, MPA, Tailwind]
 highlight: true
