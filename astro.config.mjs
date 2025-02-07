@@ -6,11 +6,10 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: process.env.SITE_URL,
-  base: "/portfolio/",
+  base: "/portfolio",
   integrations: [mdx(), sitemap(), tailwind()],
   server: {
     port: +process.env.PORT || undefined,
   },
-  outDir: "./public",
   publicDir: "./static",
 });

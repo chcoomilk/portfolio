@@ -12,7 +12,7 @@ export interface Props {
 const {
 	title,
 	description,
-	image = import.meta.env.BASE_URL + "social_img.png",
+	image = import.meta.env.BASE_URL + "/social_img.png",
 } = Astro.props;
 ---
 
@@ -22,7 +22,7 @@ const {
 <link
 	rel="icon"
 	type="image/svg+xml"
-	href={`${import.meta.env.BASE_URL}favicon.svg`}
+	href={`${import.meta.env.BASE_URL}/favicon.svg`}
 />
 <meta name="generator" content={Astro.generator} />
 
