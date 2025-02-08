@@ -3,7 +3,7 @@ import { LINKS } from "../config";
 ---
 
 <div class="drawer-side z-40">
-  <label for="my-drawer" class="drawer-overlay"></label>
+  <label for="my-drawer" class="drawer-overlay"><span class="hidden">drawer</span></label>
   <aside class="px-2 pt-2 h-auto min-h-full w-[19rem] bg-base-200 text-base-content flex flex-col">
     <div class="w-fit mx-auto mt-5 mb-6">
       <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
@@ -27,19 +27,11 @@ import { LINKS } from "../config";
       </li>
     </ul>
 
-    <div
-      class="block sticky pointer-events-none bottom-9 bg-base-200 justify-center h-8 [mask-image:linear-gradient(transparent,#000000)]"
-    >
-    </div>
+    <div class="block sticky pointer-events-none bottom-9 bg-base-200 justify-center h-8 [mask-image:linear-gradient(transparent,#000000)]"></div>
 
     <div class="social-icons px-4 py-2 mb-5 flex self-center justify-center sticky bottom-0 bg-base-200">
       <a href={LINKS.github} target="_blank" class="mx-3" aria-label="Github">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"
           ><path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -49,12 +41,7 @@ import { LINKS } from "../config";
       </a>
 
       <a href={LINKS.linkedin} target="_blank" class="mx-3" aria-label="Linkedin">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"
           ><circle cx="4.983" cy="5.009" r="2.188"></circle><path
             d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
           ></path>
@@ -62,13 +49,7 @@ import { LINKS } from "../config";
       </a>
 
       <a href={LINKS.whatsapp} target="_blank" class="mx-3" aria-label="WhatsApp">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;">
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -78,12 +59,7 @@ import { LINKS } from "../config";
       </a>
 
       <a href={LINKS.instagram} target="_blank" class="mx-3" aria-label="Instagram">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"
           ><path
             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
           ></path>
@@ -91,15 +67,8 @@ import { LINKS } from "../config";
       </a>
 
       <a href={import.meta.env.BASE_URL + "/rss.xml"} target="_blank" class="mx-3" aria-label="RSS Feed">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          style="fill: currentColor;transform: ;msFilter:;"
-          ><path d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"></path><circle cx="6" cy="18" r="2"
-          ></circle>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: currentColor;transform: ;msFilter:;"
+          ><path d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"></path><path d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
       </a>
     </div>
