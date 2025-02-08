@@ -1,3 +1,10 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@plugin "daisyui" {
+  themes: all;
+}
+
 .time-line-container > div.flex:last-child > .education__time > .education__line {
-    display: none;
+  display: none;
 }

@@ -8,18 +8,17 @@ Modern Personal Website Template with Project Section, CV Section, Paginated Blo
 
 View a live demo of the [Astro Modern Personal Website](https://astro-modern-personal-website.netlify.app/)
 
-
 ## Installation
 
 Run the following command in your terminal
 
-``` bash
+```bash
 npm install
 ```
 
 Once the packages are installed you are ready to run astro. Astro comes with a built-in development server that has everything you need for project development. The astro dev command will start the local development server so that you can see your new website in action for the very first time.
 
-``` bash
+```bash
 npm run dev
 ```
 
@@ -29,11 +28,9 @@ npm run dev
 - [tailwindcss](https://tailwindcss.com/)
 - [DaisyUI](https://daisyui.com/)
 
-
-
 ## Project Strucutre
 
-``` php
+```php
 ├── src/
 │   ├── components/
 │   │   ├── cs/
@@ -88,19 +85,16 @@ The used social-icons are SVG form [BoxIcons](https://boxicons.com/) pack.
 
 The timeline components are used to conform the CV.
 
-``` html
- <div class="time-line-container">
-    <TimeLineElement
-      title="Element Title"
-      subtitle="Subtitle"
-      desc="Description"
-    />
-    ...
+```html
+<div class="time-line-container">
+  <TimeLineElement title="Element Title" subtitle="Subtitle" desc="Description" />
+  ...
 </div>
 ```
 
 #### Card & HorizontalCard
-``` html
+
+```html
    <HorizontalCard
       title="Card Title"
       img="imge_url"
@@ -115,20 +109,31 @@ The timeline components are used to conform the CV.
 #### HorizontalCard Shop Item
 
 This compoenet is already included in the Store layout of the template. In case you want to use it in other place this are the props.
-``` html
-   <HorizontalShopItem
-        title= "Item Title"
-        img= "imge_url"
-        desc= "Item description"
-        pricing= "current_price"
-        oldPricing= "old_price"
-        checkoutUrl= "external store checkout url"
-        badge="Optional badge"
-        details= true # show or hide details btn (default is true)
-        url= "item details url"
-        custom_link= "Custom link url"
-        custom_link_label= "Cutom link btn label" target="Optional link target (_self default)"
-      />
+
+```html
+<HorizontalShopItem
+  title="Item Title"
+  img="imge_url"
+  desc="Item description"
+  pricing="current_price"
+  oldPricing="old_price"
+  checkoutUrl="external store checkout url"
+  badge="Optional badge"
+  details="true"
+  #
+  show
+  or
+  hide
+  details
+  btn
+  (default
+  is
+  true)
+  url="item details url"
+  custom_link="Custom link url"
+  custom_link_label="Cutom link btn label"
+  target="Optional link target (_self default)"
+/>
 ```
 
 ### Layouts
@@ -146,7 +151,9 @@ Add your `md` blog post in the `/pages/blog/` folder.
 The `[page].astro` is the route to work with the paginated post list. You can change there the number of items listed for each page and the pagination button labels.
 
 ##### Post format
+
 Add code with this format in the top of each post file.
+
 ```
 ---
 layout: "../../layouts/PostLayout.astro"
@@ -156,6 +163,7 @@ pubDate: "Post date format(Sep 10 2022)"
 heroImage: "Post Hero Image URL"
 ---
 ```
+
 #### Shop
 
 Add your `md` item in the `/pages/shop/` folder.
@@ -165,8 +173,10 @@ Add your `md` item in the `/pages/shop/` folder.
 The `[page].astro` is the route to work with the paginated item list. You can change there the number of items listed for each page and the pagination button labels. The shop will render all `.md` files you incle inside this folder.
 
 ##### Item format
+
 Add code with this format in the top of each item file.
-``` js
+
+```js
 ---
 layout: "../../layouts/StoreItemLayout.astro"
 title: "Demo Item 1"
@@ -182,6 +192,7 @@ badge: "Featured"
 checkoutUrl: "https://checkouturl.com/"
 ---
 ```
+
 #### Static pages
 
 The other pages inlcuded in the template are static pages. The `index` page belong to the root page. You can add your pages directly in the `/pages` folder and then add a link to that pages in the `sidebar` component.
@@ -213,7 +224,7 @@ Suggestions and pull requests are welcomed! Feel free to open a discussion or an
 
 One of the best ways of contribute is to grab a [bug report o feature suggestion](https://github.com/manuelernestog/astro-modern-personal-website/issues) that has been marked `accepted` and dig in.
 
-Please be wary of working on issues *not* marked as `accepted`. Just because someone has created an issue doesn't mean we'll accept a pull request for it.
+Please be wary of working on issues _not_ marked as `accepted`. Just because someone has created an issue doesn't mean we'll accept a pull request for it.
 
 ## License
 
@@ -226,5 +237,3 @@ Astro Modern Personal Website is licensed under the MIT license — see the [LIC
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
-
-

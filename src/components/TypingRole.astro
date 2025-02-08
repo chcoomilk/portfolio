@@ -1,75 +1,72 @@
 <div class="text-3xl py-3 font-bold">
-    <p
-        class="typewrite inline"
-        data-period="2500"
-        data-type={`[
+  <p
+    class="typewrite inline"
+    data-period="2500"
+    data-type={`[
             "Software Engineer",
             "Fullstack Web Developer",
             "React/NodeJS Developer",
             "Rust Developer",
             "UI/UX Designer"
         ]`}
-    >
-        <span class="wrap"></span>
-    </p>
+  >
+    <span class="wrap"></span>
+  </p>
 </div>
 
 <script is:inline>
-    var TxtType = function (el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = "";
-        this.tick();
-        this.isDeleting = false;
-    };
+  var TxtType = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = "";
+    this.tick();
+    this.isDeleting = false;
+  };
 
-    TxtType.prototype.tick = function () {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+  TxtType.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
 
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
 
-        // damn this is a power move
-        this.el.innerHTML =
-            '<span class="wrap">' +
-            this.txt +
-            "</span><p class='inline animate-blink'>|</p>";
+    // damn this is a power move
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span><p class='inline animate-blink'>|</p>";
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
+    var that = this;
+    var delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) {
-            delta /= 2;
-        }
+    if (this.isDeleting) {
+      delta /= 2;
+    }
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === "") {
-            this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-        }
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
 
-        setTimeout(function () {
-            that.tick();
-        }, delta);
-    };
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
 
-    window.onload = function () {
-        var elements = document.getElementsByClassName("typewrite");
-        for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute("data-type");
-            var period = elements[i].getAttribute("data-period");
-            if (toRotate) {
-                new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-    };
+  window.onload = function () {
+    var elements = document.getElementsByClassName("typewrite");
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute("data-type");
+      var period = elements[i].getAttribute("data-period");
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+  };
 </script>
