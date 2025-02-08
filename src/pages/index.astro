@@ -2,14 +2,12 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import TypingRole from "../components/TypingRole.astro";
+import { getProjects } from "./projects/utils";
 
-const posts = (await Astro.glob("./projects/*.{md,mdx}")).sort(
-  (a, b) =>
-    // sort by time descending
-    new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf(),
-);
-
-const last_posts = posts.slice(0, 3);
+const last_projects = getProjects()
+  // sort by time descending
+  .sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf())
+  .slice(0, 3);
 ---
 
 <BaseLayout>
@@ -60,7 +58,7 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   {
-    last_posts.map((post) => (
+    last_projects.map((post) => (
       <>
         <HorizontalCard
           title={post.frontmatter.title}
