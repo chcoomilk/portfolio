@@ -44,7 +44,7 @@ const { title, description, image } = Astro.props;
 <script is:inline>
   // ☝️ This script prevent the FART effect.
   if (localStorage.getItem("theme") === null) {
-    document.documentElement.setAttribute("data-theme", "follow-system");
+    document.documentElement.setAttribute("data-theme", "abyss");
   } else document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
   // "theme" LocalStorage value is set by the package to remember user preference.
   // The value is checked and applyed before rendering anything.
