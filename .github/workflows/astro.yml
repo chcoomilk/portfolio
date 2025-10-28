@@ -41,12 +41,18 @@ jobs:
       with:
         bun-version: latest
 
+    - uses: actions/cache@v4
+      with:
+        path: |
+          ~/.bun/install/cache
+        key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lockb') }}
+
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
 
     - name: Install dependencies
-      run: bun i
+      run: bun ci
       working-directory: ${{ env.BUILD_PATH }}
 
     - name: Build with Astro
