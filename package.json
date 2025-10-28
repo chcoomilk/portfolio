@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "bap": "astro build && astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "prettier src/ --write"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.8",

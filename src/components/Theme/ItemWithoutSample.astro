@@ -8,11 +8,15 @@ type Props = {
 const { id, bgClass = "bg-zinc-300", textClass = "text-zinc-800" }: Props = Astro.props;
 ---
 
-<div class={"outline-base-content overflow-hidden rounded-lg outline-offset-2"} data-set-theme={id} data-act-class="outline-2">
+<div
+  class={"outline-base-content overflow-hidden rounded-lg outline-offset-2"}
+  data-set-theme={id}
+  data-act-class="outline-2"
+>
   <div data-theme={id} class={bgClass + " bg-base-100 text-base-content w-full cursor-pointer font-sans"}>
     <div class="grid grid-cols-5 grid-rows-3">
       <div class="col-span-5 row-span-3 row-start-1 flex gap-1 py-3 px-4">
-        <div class={"flex-grow text-sm font-bold text-center " + textClass}>
+        <div class={"grow text-sm font-bold text-center " + textClass}>
           <slot />
         </div>
       </div>
