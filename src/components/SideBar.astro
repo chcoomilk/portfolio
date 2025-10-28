@@ -4,10 +4,10 @@ import { LINKS } from "../config";
 
 <div class="drawer-side z-40">
   <label for="my-drawer" class="drawer-overlay"><span class="hidden">drawer</span></label>
-  <aside class="px-2 pt-2 h-auto min-h-full w-[19rem] bg-base-200 text-base-content flex flex-col">
+  <aside class="px-2 pt-2 h-auto min-h-full w-76 bg-base-200 text-base-content flex flex-col">
     <div class="w-fit mx-auto mt-5 mb-6">
       <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
-        <div class="rounded-full w-[8.5rem]">
+        <div class="rounded-full w-34">
           <img class="mask mask-circle" src={`${import.meta.env.BASE_URL}/profile.avif`} alt="my profile" />
         </div>
       </div>
@@ -28,7 +28,7 @@ import { LINKS } from "../config";
     </ul>
 
     <div
-      class="block sticky pointer-events-none bottom-9 bg-base-200 justify-center h-8 [mask-image:linear-gradient(transparent,#000000)]"
+      class="block sticky pointer-events-none bottom-9 bg-base-200 justify-center h-8 mask-[linear-gradient(transparent,#000000)]"
     >
     </div>
 
